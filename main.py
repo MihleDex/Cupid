@@ -23,13 +23,16 @@ def main(page:ft.Page) -> None:
     
     #Create a column to store the fields in rows
     reigster_view = Column(spacing=10)
+    #Add fiels to column
     reigster_view.controls.append(username)
     reigster_view.controls.append(password)
     reigster_view.controls.append(tncs)
     reigster_view.controls.append(button_submit)
     
+    
     #Create a container to store columns
     main_container = ft.Container(padding=20)
+    #Add column to container
     main_container.content = reigster_view
     
     #add views to page
